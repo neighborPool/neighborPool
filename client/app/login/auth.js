@@ -9,28 +9,6 @@ angular.module('NeighborPool.Login',[])
 		templateUrl: 'app/login/login.html',
 		controller: function($scope, $http, $location, $window){
 
-
-		scope.signin =function (username, password){
-			var newUser = {
-				username: usename,
-				password: password
-			}
-			
-			$http({
-				method: 'POST',
-				url: '/signin',
-				data: newUser
-			}).then(function(resp){
-				var token = resp.data
-				$window.localStorage.revomeItem('token')
-			})
-
-
-			$scope.usename ='';
-		  $scope.usename ='';
-
-		}
-
 		},
 		controllerAs: 'LoginCtrl'
 	});
