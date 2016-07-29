@@ -5,14 +5,6 @@ var bodyParser = require('body-parser');
 var User = require('./mongoUtils');
 
 
-var newUser = {
-	username: 'peter',
-	password: '1234'
-}
-
-
-User.create(newUser)
-
 
 // connnect to database and server.
 mongoose.connect('mongodb://localhost/users');
@@ -22,25 +14,13 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/../client'));
 
-app.post('/signin', function(req, res){
-	var username = req.body.username
-
-	User.findOne({username: username})
-		User.compare()
-		.then(function(boolean){
-			if(!boolean){
-				error
-			}
-			res.josn(boolen) 
-		})
-
-
+app.post('/login', function(req, res){
 	app.json('hello world')
 });
 
-
-
-
+app.get('/userProfile', function(req, res){
+	app.send('hello world')
+});
 
 app.get('/home', function(req, res){
 	app.json('hello world')
