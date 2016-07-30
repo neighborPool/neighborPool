@@ -23,16 +23,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/../client'));
 
 app.post('/signin', function(req, res){
-	var username = req.body.username
 
-	User.findOne({username: username})
-		User.compare()
-		.then(function(boolean){
-			if(!boolean){
-				error
-			}
-			res.josn(boolen) 
-		})
 
 
 	app.json('hello world')
@@ -43,6 +34,10 @@ app.post('/signin', function(req, res){
 
 
 app.get('/home', function(req, res){
+	app.json('hello world')
+});
+
+app.get('/mapView', function(req, res){
 	app.json('hello world')
 });
 // listen for connection
