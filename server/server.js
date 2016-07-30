@@ -14,7 +14,14 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/../client'));
 
+<<<<<<< HEAD
 app.post('/login', function(req, res){
+=======
+app.post('/signin', function(req, res){
+
+
+
+>>>>>>> pr/17
 	app.json('hello world')
 });
 
@@ -23,6 +30,10 @@ app.get('/userProfile', function(req, res){
 });
 
 app.get('/home', function(req, res){
+	app.json('hello world')
+});
+
+app.get('/mapView', function(req, res){
 	app.json('hello world')
 });
 // listen for connection
