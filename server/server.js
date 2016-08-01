@@ -20,7 +20,13 @@ app.post('/login', function(req, res){
 
 app.post('/signup', function(req, res){
 	res.send('testing signup');
-	console.log(req.body);
+	
+	User.create(req.body, function(err, data){
+		if(err){
+			throw err;
+		}
+		console.log(data);
+	})
 })
 
 app.get('/userProfile', function(req, res){
