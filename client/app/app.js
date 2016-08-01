@@ -1,5 +1,11 @@
 // create main angular module, connect to other modules and router. This is a basic set up as your application grows you can refactor as you wish.
-angular.module('NeighborPool',["ui.router", 'NeighborPool.Login'])
+angular.module('NeighborPool',[
+	"ui.router", 
+	'NeighborPool.Login',
+	'NeighborPool.Signup',
+	'NeighborPool.UserProfile'
+	])
+
 // make your route configurations using uiRouter, the config func takes in a callback with two parameter $stateProvider, $urlRouterProvider. the parameter are objects. read what methods they have.
 .config(function($stateProvider, $urlRouterProvider){
 // $urlRouterProvider make dericts your urls
@@ -12,7 +18,7 @@ angular.module('NeighborPool',["ui.router", 'NeighborPool.Login'])
 		templateUrl: 'index.html',
 		resolve: {
 			userService: function($http){
-				// return $http.get('/home');
+				return $http.get('/home');
 			}
 		},
 		controller: function($scope, userService, $location){

@@ -15,15 +15,20 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + '/../client'));
 
 app.post('/login', function(req, res){
-	app.json('hello world')
+	res.json('hello world')
 });
 
+app.post('/signup', function(req, res){
+	res.send('testing signup');
+	console.log(req.body);
+})
+
 app.get('/userProfile', function(req, res){
-	app.send('hello world')
+	res.send('hello world')
 });
 
 app.get('/home', function(req, res){
-	app.json('hello world')
+	res.json('hello world')
 });
 // listen for connection
 app.listen(8080, function(){
