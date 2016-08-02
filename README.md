@@ -4,9 +4,9 @@
 
 ## Team
 
-  - __Product Owner__: space cat
-  - __Scrum Master__: space cat
-  - __Development Team Members__: space cat, space cat
+  - __Product Owner__: Jorge Carapia
+  - __Scrum Master__: Arnoldo 
+  - __Development Team Members__: Alberto, Mateo
 
 ## Table of Contents
 
@@ -48,5 +48,10 @@ View the project roadmap [here](LINK_TO_PROJECT_ISSUES)
 
 
 ## Contributing
+Contributions and improvements are welcome!
+1. Fork and clone the repo.
+2. Make pull requests to the dev branch.
+
+Please adhere to Airbnb ES5 guidelines.
 
 See [CONTRIBUTING.md](https://github.com/unexpected-lion/ourglass/blob/master/contributing.md) for contribution guidelines.
