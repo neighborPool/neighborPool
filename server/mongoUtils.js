@@ -17,5 +17,6 @@ var UserSchema = new mongoose.Schema({
 		salt: String
 });
 
+var User = mongoose.model('users', UserSchema);
 
-module.exports = mongoose.model('users', UserSchema);
+module.exports = User;
