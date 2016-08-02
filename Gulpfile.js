@@ -20,8 +20,8 @@ gulp.task('start', ['serve'],function () {
     notify: true,
     // address for server,
     injectChanges: true,
-    files: paths.scripts.concat(paths.html, paths.styles),
-    proxy: 'localhost:8000'
+    files: paths.scripts.concat(paths.html, paths.styles, paths.scripts),
+    proxy: 'localhost:8080'
   });
 });
 // start our node server using nodemon
