@@ -5,16 +5,16 @@ var mongoose = require('mongoose'),
 
 // export the database.
 var UserSchema = new mongoose.Schema({
-		username: {
-			type: String,
-			require: true,
-			uniq: true
-		},
-		password: {
-			type: String,
-			require: true
-		},
-		salt: String
+    username: {
+      type: String,
+      require: true,
+      uniq: true
+    },
+    password: {
+      type: String,
+      require: true
+    },
+    salt: String
 });
 
 var User = mongoose.model('users', UserSchema);

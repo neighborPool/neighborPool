@@ -23,7 +23,7 @@ angular.module('NeighborPool.Signup',[])
 		},
 		controllerAs: 'LoginCtrl'
 	});
-
 })
+
 
 
