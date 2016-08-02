@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // create main angular module, connect to other modules and router. This is a basic set up as your application grows you can refactor as you wish.
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -39,6 +40,14 @@ angular.module('NeighborPool',["ui.router", 'uiGmapgoogle-maps','NeighborPool.Lo
 // $urlRouterProvider make dericts your urls
 >>>>>>> pr/28
     
+=======
+angular.module('NeighborPool',["ui.router", 'ngMaterial','uiGmapgoogle-maps','NeighborPool.Login', 'NeighborPool.Signup','MapView', 'NeighborPool.UserProfile'])
+
+// make your route configurations using uiRouter, the config func takes in a callback with two parameter $stateProvider, $urlRouterProvider. the parameter are objects. read what methods they have.
+.config(function($stateProvider, $urlRouterProvider ){
+// $urlRouterProvider make dericts your urls
+
+>>>>>>> pr/31
 	$urlRouterProvider.otherwise('/login');
 // 	$stateProvider has a state property so you can set your state options, it takes two paramater a name of the state it can be banana and object. The object takes a url property and the url as a value. A templateUrl propety with the path to the static file.
 	$stateProvider

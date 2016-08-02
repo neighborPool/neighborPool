@@ -6,7 +6,11 @@ angular.module('MapView',[])
         url: '/mapView',
         templateUrl: 'app/mapView/mapView.html',
         controller: function($scope){
+<<<<<<< HEAD
         	$scope.map = { center: { latitude: 37, longitude: -122 }, zoom: 15 };
+=======
+          $scope.map = { center: { latitude: 37, longitude: -122 }, zoom: 15 };
+>>>>>>> pr/31
             $scope.output = document.getElementById("loc");
             $scope.maker = {};
 
