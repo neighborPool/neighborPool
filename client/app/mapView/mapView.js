@@ -1,5 +1,6 @@
 angular.module('MapView',[])
 .config(function($stateProvider){
+<<<<<<< HEAD
   $stateProvider
   // the state will go on the html that you want route the user.
   .state('mapView', {
@@ -33,6 +34,21 @@ angular.module('MapView',[])
                 // error handling.
               $scope.output.innerHTML = "Unable to retrieve your location";
             });
+=======
+    $stateProvider
+    // the state will go on the html that you want route the user.
+    .state('mapView', {
+        url: '/mapView',
+        templateUrl: 'app/mapView/mapView.html',
+        controller: function($scope){
+<<<<<<< HEAD
+        	$scope.map = { center: { latitude: 37, longitude: -122 }, zoom: 15 };
+=======
+          $scope.map = { center: { latitude: 37, longitude: -122 }, zoom: 15 };
+>>>>>>> pr/31
+            $scope.output = document.getElementById("loc");
+            $scope.maker = {};
+>>>>>>> Dev
 
         }();
         // function to request ride

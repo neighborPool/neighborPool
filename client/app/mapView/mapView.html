@@ -1,4 +1,5 @@
 <div ui-sref='mapView' >
+<<<<<<< HEAD
 	<div id="loc"></div>
 	<div id="mapDiv">
 		<ui-gmap-google-map center='map.center' zoom='map.zoom' refresh='true' control={control}>
@@ -21,4 +22,28 @@
 		
 
 	</div>
+=======
+  <div id="loc"></div>
+  <div id="mapDiv">
+    <ui-gmap-google-map center='map.center' zoom='map.zoom' maker=>
+      <ui-gmap-marker  coords="maker" icon="icon" idkey="1"></ui-gmap-marker> 
+    </ui-gmap-google-map>
+  </div>
+  <div class="btn-Center">
+    <button class="btn btn-danger" ng-click='myRide()' >Ride</button>
+  </div>
+  <div id="mapUsers">
+
+    <div class="clear" ng-repeat='user in mockUsers'>
+      <div class="mapUserImg">
+        <img class="img-responsive" src="http://falconbus.in/images/site/user_icon.png">
+      </div>
+      <h1> {{ user.username }} </h1>
+      <p> {{ user.mess}} </p>
+    </div>
+
+    
+
+  </div>
+>>>>>>> pr/31
 </div>
