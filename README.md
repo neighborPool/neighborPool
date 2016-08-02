@@ -1,6 +1,10 @@
-# Space Kitten
+# NeighborPool
 
-> Pithy project description
+> NeighborPool is a social networking app for carpooling within your local neighborhood. It allows users to connect with their neighbors in order to request and provide carpooling services. It aims at eliminating the constraints of the current carpooling model - waiting at a predetermined location during specific hours of the day. With NeighborPool, you can request or provide from anywhere in your neighborhood and at any time of the day.
+
+## Technology
+
+It is build on the MEAN stack and  utilizes Google Maps API to determine the user location. 
 
 ## Team
 
