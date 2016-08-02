@@ -7,7 +7,7 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "client/lib"
+    "lib"
   ],
   "dependencies": {
     "angular": "~1.3.16",

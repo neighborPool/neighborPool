@@ -1,8 +1,8 @@
 <div ui-sref='mapView' >
 	<div id="loc"></div>
 	<div id="mapDiv">
-		<ui-gmap-google-map center='map.center' zoom='map.zoom' maker=>
-			<ui-gmap-marker  coords="maker" icon="icon" idkey="1"></ui-gmap-marker>	
+		<ui-gmap-google-map center='map.center' zoom='map.zoom' refresh='true' control={control}>
+			<ui-gmap-marker  coords="marker" icon="icon" idkey="1"></ui-gmap-marker>	
 		</ui-gmap-google-map>
 	</div>
 	<div class="btn-Center">

@@ -16,11 +16,11 @@ app.use(express.static(__dirname + '/../client'));
 
 
 app.post('/signin', function(req, res){
-	app.json('hello world')
+	res.json('hello world')
 });
 
 app.get('/userProfile', function(req, res){
-	app.send('hello world')
+	res.send('hello world')
 });
 
 app.get('/home', function(req, res){
@@ -28,9 +28,9 @@ app.get('/home', function(req, res){
 });
 
 app.get('/mapView', function(req, res){
-	app.json('hello world')
+	res.json('hello world')
 });
 // listen for connection
-app.listen(8080, function(){
+app.listen( process.env.PORT || 8080, function(){
 	console.log('Listening on 8080');
 });
