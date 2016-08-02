@@ -24,7 +24,12 @@ It is build on the MEAN stack and  utilizes Google Maps API to determine the use
 
 ## Usage
 
-> Some usage instructions
+From the command line in the root directory
+
+```sh
+mongod
+npm start
+```
 
 ## Requirements
 
