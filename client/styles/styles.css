@@ -1,3 +1,29 @@
 .angular-google-map-container { 
-    height: 400px; 
+    height: 300px; 
+}
+
+#mapDiv {
+	width: 500px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+.btn-Center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.mapUserImg {
+	height: 70px;
+	width: 70px;
+	float: left;
+}
+
+.clear {
+	width: 500px;
+	height: 70px;
+	margin: 0 auto;
+	clear: both;
+	background-color: purple;
+
 }
