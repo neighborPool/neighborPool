@@ -10,16 +10,31 @@ angular.module('NeighborPool.Login',[])
             // return $http.get('signup');
         },
         controller: function($scope, $http, $location, $window){
-            $scope.signin = function(){
+            
+            $scope.signin = function(username, password){
+                $scope.user = {
+                    username: username,
+                    password: password
+                };
+
                 console.log('im on the click')
+
                 $http({
                     method: 'POST',
                     url: '/login',
                     data: $scope.user
                 }).then(function(res){
+
                     $window.localStorage.setItem('NeighborPool.login', res.data.token);
                     $location.path('/mapView')
+
                 })
+                .catch(function(error){
+                    console.log(error)
+                });
+
+                $scope.username = '';
+                $scope.password = '';
             }
         },
         controllerAs: 'LoginCtrl'
