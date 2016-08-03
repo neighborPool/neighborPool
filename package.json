@@ -10,7 +10,7 @@
     "start": "node server.js"
   },
   "author": "Arnoldo",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^1.5.7",
     "clone-stats": "0.0.1",
