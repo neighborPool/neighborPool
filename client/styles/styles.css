@@ -2,15 +2,23 @@
     height: 300px; 
 }
 
-#mapDiv {
-<<<<<<< HEAD
-	width: 500px;
-	height: 300px;
-	margin: 0 auto;
-}
-
+/*
+================================
+button styling
+================================
+*/
 .btn-Center {
 	text-align: center;
+	margin: 0 auto;
+}
+/*
+================================
+map styling
+================================
+*/
+#mapDiv {
+	width: 500px;
+	height: 300px;
 	margin: 0 auto;
 }
 
@@ -26,7 +34,7 @@
 	margin: 0 auto;
 	clear: both;
 	background-color: purple;
-=======
+<<<<<<< HEAD
   width: 500px;
   height: 300px;
   margin: 0 auto;
@@ -49,6 +57,26 @@
   margin: 0 auto;
   clear: both;
   background-color: purple;
->>>>>>> pr/31
+=======
+>>>>>>> fec04c7ef78ece943019fd86f60b8533b86e3949
+}
+/*
+================================
+map styling
+================================
+*/
 
+.UsersList {
+	background-color: #F2F2F2;
+	height: 350px;
+	width: 350px;
+	margin: 0 auto;
+	border: 1px solid gray;
+	box-shadow: 1px 1px 2px;
+	margin-top: 10px;
+}
+
+.userListImg {
+	height: 200px;
+	width: 200px;
 }

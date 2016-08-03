@@ -2,7 +2,6 @@ var mongoose = require('mongoose'),
     bcrypt   = require('bcrypt-nodejs'),
     Q        = require('q'),
     SALT_WORK_FACTOR = 10;
-
 // export the database.
 var UserSchema = new mongoose.Schema({
         username: {
@@ -18,15 +17,8 @@ var UserSchema = new mongoose.Schema({
 });
 //compare password methods to compare used password
 UserSchema.methods.comparePasswords = function(userpassword){
-
-<<<<<<< HEAD
-var User = mongoose.model('users', UserSchema);
-
-=======
     var defer = Q.defer();
-
     var savedPassword = this.password;
-
     bcrypt.compare(userpassword, savedpassword, function(err, match){
         if(err){
             defer.reject(err);
@@ -36,7 +28,6 @@ var User = mongoose.model('users', UserSchema);
     })
     return defer.promise;
 };
-
 UserSchema.pre('save', function(next){
     // get the current user or instance of the user schema
     var user = this;
@@ -48,7 +39,7 @@ UserSchema.pre('save', function(next){
     bcrypt.genSalt(SALT_WORK_FACTOR, function(err, salt){
         //handle error
         if(err) {return next(err)};
-        //hash the password and the sal
+        //hash the password and the salt
         bcrypt.hash(user.password, salt, null, function(err, hash){
             //handle error
             if(err) {return next(err)}
@@ -59,8 +50,5 @@ UserSchema.pre('save', function(next){
         });
     });
 });
-
 var User = mongoose.model('users', UserSchema);
-
->>>>>>> pr/31
 module.exports = User;
