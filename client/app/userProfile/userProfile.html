@@ -1,9 +1,11 @@
-<div ui-sref='userProfile'>
-	<div>
-		<img src="http://falconbus.in/images/site/user_icon.png">
+<div ui-sref='userProfile' id="userProfile" ng-repeat='user in mockUsers'>
+	<div class="UsersList">
+		<h3> {{ user.username }} </h3>
+		<div class="userListImg">
+			<img class="img-responsive " src="http://falconbus.in/images/site/user_icon.png">
+		</div>
+		<p> {{ user.mess }} </p>
+		<p>migh add more?</p>
+		<a href="">thumbs icon</a>
 	</div>
-	<p>Name will go here</p>
-	<p>time departure</p>
-	<p>migh add more?</p>
-	<a href="">thumbs icon</a>
 </div>

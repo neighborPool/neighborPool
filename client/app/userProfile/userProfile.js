@@ -8,7 +8,7 @@ angular.module('NeighborPool.UserProfile',[])
 		url: '/userProfile',
 		templateUrl: 'app/userProfile/userProfile.html',
 		controller: function($scope, $http){
-
+			$scope.mockUsers = [{username: 'young', mess: 'I need a ride at 9am'},{username: 'young', mess: 'I need a ride at 9am'}, {username: 'young', mess: 'I need a ride at 9am'}]
 		},
 		controllerAs: 'userProfileCtrl'
 	});

@@ -23,14 +23,12 @@ angular.module('NeighborPool.Signup',[])
 		},
 		controllerAs: 'LoginCtrl'
 	});
-<<<<<<< HEAD
+
 
 })
 
 
-=======
-})
 
 
 
->>>>>>> pr/31
+
