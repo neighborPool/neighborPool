@@ -11,7 +11,7 @@ var app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/../client'));
-app.post('/login', function(req, res){
+app.post('/login', function(req, res, next){
     res.json('hello world');
     var username = req.body.username;
     var password = req.body.password;

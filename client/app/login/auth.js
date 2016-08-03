@@ -11,6 +11,7 @@ angular.module('NeighborPool.Login',[])
         },
         controller: function($scope, $http, $location, $window){
             $scope.signin = function(){
+                console.log('im on the click')
                 $http({
                     method: 'POST',
                     url: '/login',
