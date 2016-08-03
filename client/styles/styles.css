@@ -22,6 +22,20 @@ map styling
 	margin: 0 auto;
 }
 
+<<<<<<< 89db8b9ca81f3f8a2aaa54b5df6ff7d5c1a1701a
+=======
+.loading {
+height: 200px;
+margin-top: 100px;	
+text-align: center;
+}
+
+.btn-Center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+>>>>>>> map working
 .mapUserImg {
 	height: 70px;
 	width: 70px;

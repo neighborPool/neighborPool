@@ -1,15 +1,34 @@
 <div ui-sref='mapView' >
 
+<<<<<<< 89db8b9ca81f3f8a2aaa54b5df6ff7d5c1a1701a
 	<div id="mapDiv">
 		<div id="loc"></div>
 		<ui-gmap-google-map center='map.center' zoom='map.zoom' refresh='true' control={control}>
 			<ui-gmap-marker  coords="marker" icon="icon" idkey="1"></ui-gmap-marker>	
-		</ui-gmap-google-map>
-	</div>
-	<div class="btn-Center">
-		<button class="btn btn-danger" ng-click='myRide()' >Ride</button>
+=======
+
+	<div id="loc"></div>
+
+	<div class="loading" ng-if="loading">
+		<img src="/assets/map_loading.gif">
 	</div>
 
+
+	<div id="mapDiv" ng-if="coords">
+		<ui-gmap-google-map center='map.center' zoom='map.zoom' maker=>
+			<ui-gmap-marker  coords="maker" icon="icon" idkey="1"></ui-gmap-marker>	
+>>>>>>> map working
+		</ui-gmap-google-map>
+	</div>
+
+	<div class="btn-Center">
+		<button class="btn btn-danger" ng-click='myRide()' >Request Ride</button>
+	</div>
+<<<<<<< 89db8b9ca81f3f8a2aaa54b5df6ff7d5c1a1701a
+
+=======
+	
+>>>>>>> map working
 	<div id="mapUsers">
 		<div class="clear" ng-repeat='user in mockUsers'>
 			<div class="mapUserImg">
@@ -17,7 +36,11 @@
 			</div>
 			<h1> {{ user.username }} </h1>
 			<p> {{ user.mess}} </p>
+<<<<<<< 89db8b9ca81f3f8a2aaa54b5df6ff7d5c1a1701a
 		</div> 
+=======
+		</div>
+>>>>>>> map working
 	</div>
 
 </div>
