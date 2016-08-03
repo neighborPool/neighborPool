@@ -90,6 +90,6 @@ app.get('/mapView', function(req, res){
 
 // listen for connection
 app.listen( process.env.PORT || 8000, function(){
-	console.log('Listening on 8080');
+	console.log('Listening on 8000');
 });
 
