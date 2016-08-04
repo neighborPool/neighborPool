@@ -1,4 +1,5 @@
-<div ui-sref='userProfile' id="userProfile" ng-repeat='user in mockUsers'>
+<div ui-sref='userProfile' id="userProfile" infinite-scroll='loadMore()' infinite-scroll-distance="3" >
+<div ng-repeat='user in addMore'>
 	<div class="UsersList">
 		<h3> {{ user.username }} </h3>
 		<div class="userListImg">
@@ -8,4 +9,6 @@
 		<p>migh add more?</p>
 		<a href="">thumbs icon</a>
 	</div>
+</div>
+	
 </div>
