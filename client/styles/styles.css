@@ -51,6 +51,12 @@ text-align: center;
 
 }
 
+#userProfile {
+	height: 350px;
+	overflow: scroll;
+	background-color: purple;
+}
+
 .UsersList {
 	background-color: #F2F2F2;
 	height: 350px;

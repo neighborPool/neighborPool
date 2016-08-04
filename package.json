@@ -5,7 +5,8 @@
   "main": "server/server.js",
   "license": "MIT",
   "engines": {
-    "node": "^0.12.7"
+    "node": "^0.12.7",
+    "npm": "^2.15.5"
   },
   "scripts": {
     "start": "node server/server.js"
