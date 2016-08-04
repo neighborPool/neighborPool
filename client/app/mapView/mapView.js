@@ -18,7 +18,8 @@ angular.module('MapView',[])
 
             $scope.loading = true;
 
-            $scope.mockUsers = [{username: 'young', mess: 'I need a ride at 9am'},{username: 'young', mess: 'I need a ride at 9am'}, {username: 'young', mess: 'I need a ride at 9am'}]
+            $scope.mockUsers = [{username: 'young', mess: 'I need a ride at 9am'},{username: 'young', mess: 'I need a ride at 9am'}, {username: 'young', mess: 'I need a ride at 9am'},
+                              {username: 'young', mess: 'I need a ride at 9am'},{username: 'young', mess: 'I need a ride at 9am'}]
 
             $scope.location = function(){
                 if (!navigator.geolocation){
