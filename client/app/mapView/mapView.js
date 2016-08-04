@@ -13,6 +13,9 @@ angular.module('MapView',[])
 
             $scope.coords = false;
 
+           // $scope.options = {url: '//developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'};
+            $scope.options = {url: '/assets/flag.png'};
+
             $scope.loading = true;
 
             $scope.mockUsers = [{username: 'young', mess: 'I need a ride at 9am'},{username: 'young', mess: 'I need a ride at 9am'}, {username: 'young', mess: 'I need a ride at 9am'}]
