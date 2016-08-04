@@ -22,6 +22,17 @@ map styling
 	margin: 0 auto;
 }
 
+.loading {
+height: 200px;
+margin-top: 100px;	
+text-align: center;
+}
+
+.btn-Center {
+	text-align: center;
+	margin: 0 auto;
+}
+
 .mapUserImg {
 	height: 70px;
 	width: 70px;
@@ -34,7 +45,6 @@ map styling
 	margin: 0 auto;
 	clear: both;
 	background-color: purple;
-<<<<<<< HEAD
   width: 500px;
   height: 300px;
   margin: 0 auto;
@@ -57,8 +67,7 @@ map styling
   margin: 0 auto;
   clear: both;
   background-color: purple;
-=======
->>>>>>> fec04c7ef78ece943019fd86f60b8533b86e3949
+
 }
 /*
 ================================
