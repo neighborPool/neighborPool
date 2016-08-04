@@ -17,28 +17,28 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-
+NeighborPool is the super convenient social ride-sharing app you've been waiting for!
+  
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+NeighborPool will allow carpoolers to request and provide rides to people in their neighborhood at any time of the day.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+NeighborPool is an easy-to-use app that will allow you to request or provide rides to those in your neighborhood. For riders, requesting a ride is as simple as pressing a button. Drivers will be able to see not only who is requesting a ride, but also their location on the map. NeighborPool will not only change carpool services work, but create for a more social and friendly ridesharing experience.
 
 ## Problem ##
-  > Describe the problem your product solves.
+With NeighborPool you will no longer need to wait at carpool locations or hitch rides from complete strangers. NeighborPool allowes you to request a ride from the comform of your home, and since the coverage are is limited, you will be sharing a ride with those from your neighborhood; people you know and trust. Also, since the service model is based completely on volunteers, there is no cost for the ride! However, your driver will certainly appreciate a huge thank you and a smile of gratitude! Also, NeighborPool will allow you to provide rides as well, feel free to give back!
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+NeighborPool will allow you to request a ride from anywhere in your neighborhood thanks to the integrated Google Geolocation services. Upon requesting a ride, the app will pinpoint your location ustilizing a wide array of cell phone towers and wifi hotspots. It will let other users of NeighborPool know not only that you are requesting a ride, but also provide them with your location on the map. You can request a ride from anywhere in your neighborhood at any time of day! 
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  "NeighborPool will revolutionize the carpooling system. Gone are the days where carpools only operated in predetermined locations and at specific times of the day. NeighborPool will not only liberate carpoolers from those tight constraints, but will allow you to socialize with your neighbors at the same time" - Mateo Balcorta
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  NeighborPool's simple user interface will allow you to request a ride in less than a minute! Simply download the app, sign-up by entering your name and emai address and you're ready to go! You will be transported to the main page where you can request a ride at the click of a button. No need to enter your address as NeighborPool will automatically triangulate your location thanks to Google's Geolocation services. 
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+"With NeighborPool I no lover have to wait for a ride at a carpool location. I can request a ride from the comfort of my home and at any time of day. I recommend NeighborPool to anyone who needs a ride and wants to get to know their neighbors" - Anita Wryde
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+You may start utilizing NeighborPool by going to www.NeighborPool.HerokuApp.com.

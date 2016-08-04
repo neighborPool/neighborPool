@@ -1,13 +1,20 @@
 <div ui-sref='mapView' >
 
-	<div id="mapDiv">
-		<div id="loc"></div>
-		<ui-gmap-google-map center='map.center' zoom='map.zoom' refresh='true' control={control}>
-			<ui-gmap-marker  coords="marker" icon="icon" idkey="1"></ui-gmap-marker>	
+	<div id="loc"></div>
+
+	<div class="loading" ng-if="loading">
+		<img src="/assets/map_loading.gif">
+	</div>
+
+
+	<div id="mapDiv" ng-if="coords">
+		<ui-gmap-google-map center='map.center' zoom='map.zoom' maker=>
+			<ui-gmap-marker  coords="maker" icon="icon" idkey="1"></ui-gmap-marker>	
 		</ui-gmap-google-map>
 	</div>
+
 	<div class="btn-Center">
-		<button class="btn btn-danger" ng-click='myRide()' >Ride</button>
+		<button class="btn btn-danger" ng-click='myRide()' >Request Ride</button>
 	</div>
 
 	<div id="mapUsers">
@@ -19,5 +26,6 @@
 			<p> {{ user.mess}} </p>
 		</div> 
 	</div>
+	
 
 </div>

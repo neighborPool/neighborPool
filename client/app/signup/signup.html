@@ -1,14 +1,14 @@
- <div ui-sref='singup'>
+ <div ui-sref='signup'>
  	<h1>Sign Up</h1>
-	<form class="form-group" ng-submit="saveUser()">
+	<form class="form-group" >
 		<label for="Enter Username"></label>
-		<input type="text" ng-model="user.username"/><br>
+		<input type="text" ng-model="username" placeholder="username" /><br>
 		<label for="Create Password"></label>
-		<input type="text" ng-model="user.password"/><br>
-		<button type="submit" class="btn btn-primary">Submit</button>
+		<input type="password" ng-model="password" placeholder="password" /><br>
+		<button type="submit" class="btn btn-primary" ng-click="submit(username, password)" >Submit</button>
 	</form>
 
-	<a ui-sref="login">Login</a>
+	<a >Login</a>
  </div> 
   
 

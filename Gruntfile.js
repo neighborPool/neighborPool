@@ -5,15 +5,7 @@ module.exports = function(grunt) {
     concat: {
     },
 
-    mochaTest: {
-      test: {
-        options: {
-          reporter: 'spec'
-        },
-        src: ['test/**/*.js']
-      }
-    },
-
+   
     nodemon: {
       dev: {
         script: 'server.js'
@@ -90,9 +82,6 @@ module.exports = function(grunt) {
   // Main grunt tasks
   ////////////////////////////////////////////////////
 
-  grunt.registerTask('test', [
-    'mochaTest'
-  ]);
 
   grunt.registerTask('build', [
   ]);
