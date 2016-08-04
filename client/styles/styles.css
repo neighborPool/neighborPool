@@ -8,8 +8,8 @@ button styling
 ================================
 */
 .btn-Center {
-	text-align: center;
-	margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 /*
 ================================
@@ -17,19 +17,14 @@ map styling
 ================================
 */
 #mapDiv {
-	width: 500px;
-	height: 300px;
-	margin: 0 auto;
-}
-
-#mapUsers {
-	height: 290px;
-	overflow: scroll;
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
 }
 
 .loading {
 height: 200px;
-margin-top: 100px;	
+margin-top: 100px;  
 text-align: center;
 }
 
@@ -50,24 +45,115 @@ text-align: center;
   background-color: #f2f2f2;
 
 }
+/*
+================================
+map styling
+================================
+*/
 
-#userProfile {
-	height: 350px;
-	overflow: scroll;
-	background-color: purple;
+#mapUsers {
+  height: 290px;
+  overflow: scroll;
 }
 
 .UsersList {
-	background-color: #F2F2F2;
-	height: 350px;
-	width: 350px;
-	margin: 0 auto;
-	border: 1px solid gray;
-	box-shadow: 1px 1px 2px;
-	margin-top: 10px;
+  background-color: #F2F2F2;
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 2px;
+  margin-top: 10px;
 }
 
 .userListImg {
-	height: 200px;
-	width: 200px;
+  height: 200px;
+  width: 200px;
+}
+/*
+================================
+user styling
+================================
+*/
+
+#userProfile{
+  height: 450px;
+  overflow: scroll;
+}
+.usersList {
+  text-align: center;
+}
+.thumbnail img {
+  height: 200px;
+  width: 200px;
+}
+
+ .thumbs {
+  height: 35px;
+  width: 50px;
+  position: relative;
+  left: -5px;
+}
+
+.message {
+  position: relative;
+  left: -30px;
+}
+
+.profileHeader, .caption h3, p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.thumbnail {
+  margin: 0px 100px 0px 100px;
+}
+
+/*
+================================
+login styling
+================================
+*/
+
+.container-fluid {
+   background: url('../styles/banner3.jpg');  
+   background-repeat: no-repeat center center fixed; ;
+   height: 80em;
+   width: auto;
+   box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4); 
+}
+
+input {
+  height: 30px;
+  width: 200px;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+a {
+  font-size: 30px;
+  margin-left: 50px;
+
+}
+
+.btn-lg {
+  margin-left: 45px;
+  margin-top: 10px;
+}
+
+.box {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  left: 40%;
+  top: 20%;
+}
+
+/*
+================================
+navbar styling
+================================
+*/
+.navbar .nav li a {
+  font-size: 20px
 }

@@ -1,11 +1,15 @@
 <!-- this is an example of an html template -->
-<div>
-	<h1>Home</h1>
-	<!-- <a ui-sref="home">home</a> -->
-	<form class="form-group" >
-		<input type="text" name="username" ng-model='username' placeholder="username" >
-		<input type="password" name="password" ng-model='password' placeholder="password">
-		<button class="btn btn-primary" ng-click="signin(username, password)">Signin</button>
-		<h4 ui-sref="signup" >signup</h4>
-	</form>
+<div id="login" class="container-fluid">
+  <div class="box">
+  <h1>Neighbor Pool</h1>
+  <!-- <a ui-sref="home">home</a> -->
+    <form class="form-group" >
+      <label for="Enter Username"></label>
+      <input type="text" name="username" ng-model='username' placeholder="username" >
+      <label for="Create Password"></label>
+      <input type="password" name="password" ng-model='password' placeholder="password">
+      <button class="btn-primary btn-lg" ng-click="signin(username, password)">Signin</button>
+      <a ui-sref="signup">signup</a>
+    </form>
+  </div>
 </div>
