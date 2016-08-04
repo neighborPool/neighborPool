@@ -1,13 +1,40 @@
-<div ui-sref='userProfile' id="userProfile" >
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" ui-sref="login">Neighbor Pool</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav pull-right">
+        <li><a ui-sref="mapView">Map<span class="sr-only">(current)</span></a></li>
+        <li><a href="#" ng-click="signOut()">Signout</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
-	<div class="UsersList" ng-repeat='user in mockUsers'>
-		<h3> {{ user.username }} </h3>
-		<div class="userListImg">
-			<img class="img-responsive " src="http://falconbus.in/images/site/user_icon.png">
-		</div>
-		<p> {{ user.mess }} </p>
-		<p>migh add more?</p>
-		<a href="">thumbs icon</a>
-	</div>
-	
+<header class="profileHeader"><h1>Meet your neighbors through ride sharing</h1></header>
+ <div  ui-sref='userProfile' id="userProfile"  class="row">
+
+  <div class="usersList" ng-repeat='user in mockUsers'>
+    <div class="thumbnail">
+      <img src="http://falconbus.in/images/site/user_icon.png" alt="...">
+      <div class="caption">
+        <h3> {{ user.username }} </h3>
+        <p> {{ user.mess }} </p>
+        <p>Daily Routies</p>
+          <div class="buttons">
+          <a href="#" class="btn btn-default thumbs" role="button"><img src="../styles/thumbs-up-icon (1).png"></a>
+          <span><a href="#" class="btn btn-primary message" role="button">Message</a></span>
+          </div>
+      </div>
+    </div>
+  </div>
 </div>

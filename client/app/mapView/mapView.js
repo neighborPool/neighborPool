@@ -6,7 +6,7 @@ angular.module('MapView',[])
   .state('mapView', {
     url: '/mapView',
     templateUrl: 'app/mapView/mapView.html',
-    controller: function($scope){
+    controller: function($scope, $window, $location){
     	$scope.map = { center: { latitude: 38, longitude: -122 }, zoom: 15 };
         $scope.output = document.getElementById("loc");
         $scope.maker = {};
@@ -40,6 +40,18 @@ angular.module('MapView',[])
         $scope.myRide = function(){
           $scope.maker.latitude = $scope.map.center.latitude;
           $scope.maker.longitude = $scope.map.center.longitude;
+        }
+
+        $scope.signOut = function(){
+
+          console.log('running');
+
+          $window.localStorage.clear()
+
+          console.log($window.localStorage);
+
+          $location.path('/login');
+
         }
     },
     controllerAs: 'LoginCtrl'
