@@ -28,36 +28,9 @@ margin-top: 100px;
 text-align: center;
 }
 
-.btn-Center {
-	text-align: center;
-	margin: 0 auto;
-}
-
-.mapUserImg {
-	height: 70px;
-	width: 70px;
-	float: left;
-}
-
-.clear {
-	width: 500px;
-	height: 70px;
-	margin: 0 auto;
-	clear: both;
-	background-color: purple;
-  width: 500px;
-  height: 300px;
-  margin: 0 auto;
-}
-
-.btn-Center {
-  text-align: center;
-  margin: 0 auto;
-}
-
 .mapUserImg {
   height: 70px;
-  width: 70px;
+  width: 65px;
   float: left;
 }
 
@@ -65,8 +38,11 @@ text-align: center;
   width: 500px;
   height: 70px;
   margin: 0 auto;
+  border-radius: 0 15px 15px 0;
+ /* border-style: solid;
+  border-color: black;*/
   clear: both;
-  background-color: purple;
+  background-color: #f2f2f2;
 
 }
 /*
