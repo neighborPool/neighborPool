@@ -9,8 +9,7 @@ var UserSchema = new mongoose.Schema({
         username: {
             type: String,
             require: true,
-            uniq: true
-        },
+            uniq: true m
         email: {
             type: String,
             require: true,
