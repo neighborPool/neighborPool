@@ -1,31 +1,44 @@
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" ui-sref="login">Neighbor Pool</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav pull-right">
+        <li><a ui-sref="userProfile">User Profile<span class="sr-only">(current)</span></a></li>
+        <li><a href="#" ng-click="signOut()">Signout</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 <div ui-sref='mapView' >
-
 	<div id="loc"></div>
-
-	<div class="loading" ng-if="loading">
-		<img src="/assets/map_loading.gif">
+		<div class="loading" ng-if="loading">
+			<img src="/assets/map_loading.gif">
 	</div>
-
-
-	<div id="mapDiv" ng-if="coords">
-		<ui-gmap-google-map center='map.center' zoom='map.zoom' maker=>
-			<ui-gmap-marker  coords="maker" icon='options' idkey="1"></ui-gmap-marker>	
-		</ui-gmap-google-map>
+		<div id="mapDiv" ng-if="coords">
+			<ui-gmap-google-map center='map.center' zoom='map.zoom' maker=>
+				<ui-gmap-marker  coords="maker" icon='options' idkey="1"></ui-gmap-marker>	
+			</ui-gmap-google-map>
 	</div>
-
 	<div class="btn-Center">
 		<button class="btn btn-danger" ng-click='myRide()' >Request Ride</button>
 	</div>
-
-	<div id="mapUsers">
+	<div id="mapUsers" >
 		<div class="clear" ng-repeat='user in mockUsers'>
 			<div class="mapUserImg">
 				<img class="img-responsive" src="http://falconbus.in/images/site/user_icon.png">
-			</div>
+			 </div>
 			<h1> {{ user.username }} </h1>
 			<p> {{ user.mess}} </p>
 		</div> 
-	</div>
-	
-
+	</div>	
 </div>

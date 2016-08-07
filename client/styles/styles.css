@@ -8,8 +8,8 @@ button styling
 ================================
 */
 .btn-Center {
-	text-align: center;
-	margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 /*
 ================================
@@ -17,14 +17,14 @@ map styling
 ================================
 */
 #mapDiv {
-	width: 500px;
-	height: 300px;
-	margin: 0 auto;
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
 }
 
 .loading {
 height: 200px;
-margin-top: 100px;	
+margin-top: 100px;  
 text-align: center;
 }
 
@@ -51,17 +51,202 @@ map styling
 ================================
 */
 
+#mapUsers {
+  height: 290px;
+  overflow: scroll;
+}
+
 .UsersList {
-	background-color: #F2F2F2;
-	height: 350px;
-	width: 350px;
-	margin: 0 auto;
-	border: 1px solid gray;
-	box-shadow: 1px 1px 2px;
-	margin-top: 10px;
+  background-color: #F2F2F2;
+  height: 350px;
+  width: 350px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 2px;
+  margin-top: 10px;
 }
 
 .userListImg {
-	height: 200px;
-	width: 200px;
+  height: 200px;
+  width: 200px;
+}
+/*
+================================
+user styling
+================================
+*/
+
+#userProfile{
+  height: 450px;
+  overflow: scroll;
+}
+.usersList {
+  text-align: center;
+}
+.thumbnail img {
+  height: 200px;
+  width: 200px;
+}
+
+ .thumbs {
+  height: 35px;
+  width: 50px;
+  position: relative;
+  left: -5px;
+}
+
+.message {
+  position: relative;
+  left: -30px;
+}
+
+.profileHeader, .caption h3, p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.thumbnail {
+  margin: 0px 100px 0px 100px;
+}
+
+/*
+================================
+login styling
+================================
+*/
+
+
+
+.container-fluid, .mypage {
+   background: url('../assets/banner3.jpg'); 
+   background-position: center center; 
+   background-repeat: no-repeat; 
+   background-attachment: fixed;
+   background-size: cover;
+   box-shadow: rgba(0,0,0,.4); 
+}
+
+input {
+  height: 30px;
+  width: 200px;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+a {
+  font-size: 30px;
+  margin-left: 50px;
+
+}
+
+.btn-lg {
+  margin-left: 45px;
+  margin-top: 10px;
+}
+
+.box {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  left: 40%;
+  top: 20%;
+}
+
+/*
+================================
+navbar styling
+================================
+*/
+.navbar .nav li a {
+  font-size: 20px
+}
+
+/*
+================================
+testing
+================================
+*/
+
+@font-face {
+    font-family: agatha;
+    src: url(../assets/agatha.ttf);
+}
+
+
+* {
+box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.login {
+margin: 100px auto;
+width: 300px;
+}
+.login-screen {
+background-color: rgba(200, 255, 255, 0.4);
+padding: 40px 20px 50px 20px;
+border-radius: 5px;
+margin-top: 300px
+}
+
+.app-title {
+
+font-size: 50px ;
+text-align: center;
+color: black;
+}
+
+.login-form {
+text-align: center;
+}
+.control-group {
+margin-bottom: 10px;
+}
+
+input {
+text-align: center;
+background-color: #ECF0F1;
+border: 2px solid transparent;
+border-radius: 3px;
+font-size: 16px;
+font-weight: 200;
+padding: 10px 0;
+width: 250px;
+transition: border .5s;
+}
+
+input:focus {
+border: 2px solid #3498DB;
+box-shadow: none;
+}
+
+.btn {
+  border: 2px solid transparent;
+  background: #3498DB;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 250px;
+  margin: 30px auto;
+}
+
+.btn:hover {
+  background-color: #2980B9;
+}
+
+.login-link {
+  font-size: 12px;
+  color: #444;
+  display: block;
+  margin-top: 12px;
 }
