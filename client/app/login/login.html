@@ -1,15 +1,31 @@
 <!-- this is an example of an html template -->
+
 <div id="login" class="container-fluid">
-  <div class="box">
-  <h1>Neighbor Pool</h1>
-  <!-- <a ui-sref="home">home</a> -->
-    <form class="form-group" >
-      <label for="Enter Username"></label>
-      <input type="text" name="username" ng-model='username' placeholder="username" >
-      <label for="Create Password"></label>
-      <input type="password" name="password" ng-model='password' placeholder="password">
-      <button class="btn-primary btn-lg" ng-click="signin(username, password)">Signin</button>
-      <a ui-sref="signup">signup</a>
-    </form>
+
+
+  <div class="login">
+    <div class="login-screen">
+      <div class="app-title">
+        <h1><strong>NeighborPool</strong></h1>
+      </div>
+
+      <div class="login-form">
+        <div class="control-group">
+        <input type="text" class="login-field" value="" placeholder="username" id="login-name" ng-model="username">
+        <label class="login-field-icon fui-user" for="login-name"></label>
+        </div>
+
+        <div class="control-group">
+        <input type="password" class="login-field" value="" placeholder="password" id="login-pass" ng-model="password">
+        <label class="login-field-icon fui-lock" for="login-pass"></label>
+        </div>
+
+        <a class="btn btn-primary btn-large btn-block" ng-click="signin(username, password)">Login</a>
+        <a class="btn btn-primary btn-large btn-block" ui-sref="signup">Signup</a>
+        
+      </div>
+    </div>
   </div>
 </div>
+
+

@@ -1,13 +1,30 @@
-<div class="container-fluid">
-   <div class="box">
-    <h1>Sign Up</h1>
-    <form class="form-group" >
-      <label for="Enter Username"></label>
-      <input type="text" ng-model="username" placeholder="username" /><br>
-      <label for="Create Password"></label>
-      <input type="password" ng-model="password" placeholder="password" /><br>
-      <button type="submit" class="btn-primary btn-lg" ng-click="submit(username, password)" >Submit</button>
-    </form>
-    <a ui-sref="login">Login</a>
+
+<!-- this is an example of an html template -->
+
+<div id="login" class="container-fluid">
+
+
+  <div class="login">
+    <div class="login-screen">
+      <div class="app-title">
+        <h1><strong>Sign Up</strong></h1>
+      </div>
+
+      <div class="login-form">
+        <div class="control-group">
+        <input type="text" class="login-field" value="" placeholder="username" id="login-name" ng-model="username">
+        <label class="login-field-icon fui-user" for="login-name"></label>
+        </div>
+
+        <div class="control-group">
+        <input type="password" class="login-field" value="" placeholder="password" id="login-pass" ng-model="password">
+        <label class="login-field-icon fui-lock" for="login-pass"></label>
+        </div>
+
+        <a class="btn btn-primary btn-large btn-block" ng-click="submit(username, password)">Submit</a>
+        <a class="btn btn-primary btn-large btn-block" ui-sref="login">Back to Login</a>
+        
+      </div>
+    </div>
   </div>
 </div>
