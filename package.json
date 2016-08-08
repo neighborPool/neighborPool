@@ -9,7 +9,7 @@
     "npm": "^2.15.5"
   },
   "scripts": {
-    "start": "node server/server.js"
+    "start": "gulp"
   },
   "devDependencies": {
     "browser-sync": "^1.5.7",
