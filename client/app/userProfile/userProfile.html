@@ -20,21 +20,23 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<header class="profileHeader"><h1>Meet your neighbors through ride sharing</h1></header>
- <div  ui-sref='userProfile' id="userProfile"  class="row">
+<h4 class="profileHeader">Meet your neighbors through ride sharing</h4>
+<div  ui-sref='userProfile' id="userProfile">
+  <div id="scrollUsers">Scroll Users</div>
+  <div class="usersList" ng-repeat='user in allUsers'>
 
-  <div class="usersList" ng-repeat='user in mockUsers'>
-    <div class="thumbnail">
-      <img src="http://falconbus.in/images/site/user_icon.png" alt="...">
-      <div class="caption">
-        <h3> {{ user.username }} </h3>
-        <p> {{ user.mess }} </p>
-        <p>Daily Routies</p>
+      <div class="thumbnail">
+        <img src="http://falconbus.in/images/site/user_icon.png" alt="...">
+        <div >
+          <h2 class="username"> {{ "@" + user.username }} </h2>
+          <p class="caption"> {{ user.message }} </p>
+          <p class="caption">Daily Routies</p>
           <div class="buttons">
-          <a href="#" class="btn btn-default thumbs" role="button"><img src="../styles/thumbs-up-icon (1).png"></a>
-          <span><a href="#" class="btn btn-primary message" role="button">Message</a></span>
+            <a ng-click='changeThumbColor()' class="thumbs btn btn-default" role="button"><img src="../assets/thumbs-up-icon (1).png"></a>
+            <span><a href="#" class="btn btn-primary message" role="button">Message</a></span>
           </div>
-      </div>
-    </div>
+        </div>
+      </div> 
+
   </div>
 </div>

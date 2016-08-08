@@ -9,18 +9,16 @@ var UserSchema = new mongoose.Schema({
         username: {
             type: String,
             require: true,
-            uniq: true m
-        email: {
-            type: String,
-            require: true,
             uniq: true
-        }
-        ,
+        },
         password: {
             type: String,
             require: true
         },
-        salt: String
+        salt: String,
+        message: {
+            type: String
+        }
 });
 // compare password method to check the user passwords.
 UserSchema.methods.comparePasswords = function(userpassword){

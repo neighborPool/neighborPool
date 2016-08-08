@@ -1,5 +1,7 @@
 .angular-google-map-container { 
-    height: 300px; 
+  position: relative;
+  top: -20px;
+  height: 300px; 
 }
 
 /*
@@ -7,10 +9,15 @@
 button styling
 ================================
 */
+
 .btn-Center {
+  position: relative;
+  top: -12px;
   text-align: center;
   margin: 0 auto;
+
 }
+
 /*
 ================================
 map styling
@@ -23,53 +30,63 @@ map styling
 }
 
 .loading {
-height: 200px;
-margin-top: 100px;  
-text-align: center;
+  height: 200px;
+  margin-top: 100px;  
+  text-align: center;
 }
 
 .mapUserImg {
   height: 70px;
-  width: 65px;
+  width: 68px;
   float: left;
 }
 
-.clear {
+.mapUserDiv {
   width: 500px;
-  height: 70px;
-  margin: 0 auto;
-  border-radius: 0 15px 15px 0;
- /* border-style: solid;
-  border-color: black;*/
+  height: 68px;
+  margin: 0 auto; 
   clear: both;
-  background-color: #f2f2f2;
-
+  background-color: #2b2a2a;
 }
-/*
-================================
-map styling
-================================
-*/
+.right {
+  float: right;
+  position: relative;
+  right: 200px;
+  color: white;
+}
+.right p {
+  font-family: Times, "Times New Roman", Georgia, serif;
+  padding: 0;
+  margin: 0;
+  height: 25px;
+  width: 250px;
+  color: white ;
+  position: relative;
+  left: 30px;
+  font-size: 20px;
+}
+.right h3{
+  font-family: Times, "Times New Roman", Georgia, serif;
+  padding: 0;
+  margin: 0;
+  height: 40px;
+  width: 250px;
+  color: white;
+  position: relative;
+  left: 20px;
+}
 
 #mapUsers {
+  position: relative;
+  top: 5px;
+  margin: 0 auto;
   height: 290px;
   overflow: scroll;
-}
-
-.UsersList {
-  background-color: #F2F2F2;
-  height: 350px;
-  width: 350px;
-  margin: 0 auto;
+  width: 500px;
   border: 1px solid gray;
-  box-shadow: 1px 1px 2px;
-  margin-top: 10px;
+  background-color: black;
 }
 
-.userListImg {
-  height: 200px;
-  width: 200px;
-}
 /*
 ================================
 user styling
@@ -77,18 +94,30 @@ user styling
 */
 
 #userProfile{
-  height: 450px;
+
+  height: 550px;
   overflow: scroll;
+  border: 1px solid black;
+  box-shadow: 2px 0px 3px 3px #393939;
+  background-color: white;
+}
+#scrollUsers {
+  background-color: #1D1D1D;
+  color: white;
+  text-align: center;
+  font-size: 18px;
 }
 .usersList {
   text-align: center;
 }
 .thumbnail img {
+  position: relative;
+  top: 5px;
   height: 200px;
   width: 200px;
 }
 
- .thumbs {
+.thumbs {
   height: 35px;
   width: 50px;
   position: relative;
@@ -100,13 +129,24 @@ user styling
   left: -30px;
 }
 
-.profileHeader, .caption h3, p {
-    text-align: center;
-    font-size: 20px;
+.profileHeader{
+  text-align: center;
+  color: #0e75c9;
+  font-size: 20px;
+}
+.caption {
+  text-align: center;
+  font-size: 20px;
+  color: white !important;
 }
 
 .thumbnail {
-  margin: 0px 100px 0px 100px;
+  margin: 0px 15px 0px 15px;
+  background-color: #2b2a2a !important;
+}
+
+.username{
+  color: white;
 }
 
 /*
@@ -127,7 +167,7 @@ login styling
 }
 
 input {
-  height: 30px;
+  height: 45px;
   width: 200px;
   padding: 20px;
   margin-bottom: 5px;
@@ -223,7 +263,7 @@ border: 2px solid #3498DB;
 box-shadow: none;
 }
 
-.btn {
+.btnLS {
   border: 2px solid transparent;
   background: #3498DB;
   color: #ffffff;
