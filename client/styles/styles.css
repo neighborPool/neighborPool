@@ -296,5 +296,11 @@ box-shadow: none;
 .logo {
   font-family: agatha;
   font-size: 75px;
-  color: rgb(204,85,0);
+  color: rgb(204,85,0) !important;
+}
+
+.logos {
+  font-family: agatha;
+  font-size: 35px ;
+  color: rgb(204,85,0); 
 }
