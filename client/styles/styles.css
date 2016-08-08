@@ -182,6 +182,7 @@ a {
 .btn-lg {
   margin-left: 45px;
   margin-top: 10px;
+
 }
 
 .box {
@@ -278,6 +279,7 @@ box-shadow: none;
   display: block;
   width: 250px;
   margin: 30px auto;
+  margin-bottom: 5px;
 }
 
 .btn:hover {
@@ -289,4 +291,10 @@ box-shadow: none;
   color: #444;
   display: block;
   margin-top: 12px;
+}
+
+.logo {
+  font-family: agatha;
+  font-size: 75px;
+  color: rgb(204,85,0);
 }

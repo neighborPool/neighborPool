@@ -26,7 +26,9 @@ angular.module('NeighborPool.UserProfile',['infinite-scroll'])
         $window.localStorage.removeItem('NeighborPool');
         $location.path('/login');
       }
+
       $scope.changeColor = false;
+
       $scope.changeThumbColor = function(){
       
         $('.thumbs').click(function(){
@@ -38,8 +40,11 @@ angular.module('NeighborPool.UserProfile',['infinite-scroll'])
             thumbsUp.css({'background-color': 'white'});
             $scope.changeColor = false;
           }
-        })
-        
+        });
+      };
+
+      $scope.alerting = function(){
+        alert('this will be a pop up box.')
       }
 
     },
