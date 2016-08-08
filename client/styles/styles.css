@@ -11,11 +11,9 @@ button styling
 */
 
 .btn-Center {
+  margin-left: 20%;
+  margin-top: -30px;
   position: relative;
-  top: -12px;
-  text-align: center;
-  margin: 0 auto;
-
 }
 
 /*
@@ -36,9 +34,13 @@ map styling
 }
 
 .mapUserImg {
-  height: 70px;
+  height: 69px;
   width: 68px;
   float: left;
+}
+
+.mapUserImg img{
+  height: 100%;
 }
 
 .mapUserDiv {
@@ -84,7 +86,7 @@ map styling
   overflow: scroll;
   width: 500px;
   border: 1px solid gray;
-  background-color: black;
+  background-color: rgb(204,85,0);
 }
 
 /*
@@ -92,6 +94,10 @@ map styling
 user styling
 ================================
 */
+
+.messageBox {
+  width: 100%;
+}
 
 #userProfile{
 

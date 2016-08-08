@@ -13,7 +13,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav pull-right">
-        <li><a ui-sref="userProfile">User Profile<span class="sr-only">(current)</span></a></li>
+        <li><a ui-sref="userProfile">Neighbors<span class="sr-only">(current)</span></a></li>
         <li><a href="#" ng-click="signOut()">Signout</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -31,12 +31,12 @@
 			</ui-gmap-google-map>
 	</div>
 	<div class="btn-Center">
-		<button class="btn btn-danger" ng-click='RequestRideButton()' >Request Ride</button>
+		<button class="btn btn-danger btn-lg" ng-click='RequestRideButton()' >Request Ride</button>
 	</div>
 	<div id="mapUsers" >
 		<div class="mapUserDiv" ng-repeat='user in allUsers'>
 			<div class="mapUserImg">
-				<img class="img-responsive" src="http://falconbus.in/images/site/user_icon.png">
+				<img class="img-responsive" src="https://d.ibtimes.co.uk/en/full/401278/bar-refaeli-israel-waters.jpg">
 			</div>
 			<div class="right">
 				<h3> {{ '@' + user.username }} </h3>

@@ -1,4 +1,4 @@
-angular.module('NeighborPool.UserProfile',['infinite-scroll'])
+angular.module('NeighborPool.UserProfile',[])
 
 .config(function($stateProvider){
 
@@ -7,7 +7,7 @@ angular.module('NeighborPool.UserProfile',['infinite-scroll'])
   .state('userProfile', {
     url: '/userProfile',
     templateUrl: 'app/userProfile/userProfile.html',
-    controller: function($scope, $http, $window, $location){
+    controller: function($scope, $http, $window, $location, $uibModal, $log){
 
       // Make a Get resquest to get all of the users to display below map
       $http({
@@ -43,12 +43,55 @@ angular.module('NeighborPool.UserProfile',['infinite-scroll'])
         });
       };
 
-      $scope.alerting = function(){
-        alert('this will be a pop up box.')
-      }
+      
+
+      $scope.animationsEnabled = true;
+
+      $scope.open = function (size) {
+
+        var modalInstance = $uibModal.open({
+          animation: $scope.animationsEnabled,
+          templateUrl: 'myModalContent.html',
+          controller: 'ModalInstanceCtrl',
+          size: size,
+          resolve: {
+            items: function () {
+              return $scope.items;
+            }
+          }
+        });
+
+        modalInstance.result.then(function (selectedItem) {
+          $scope.selected = selectedItem;
+        }, function () {
+          $log.info('Modal dismissed ');
+        });
+      };
+
+      
 
     },
     controllerAs: 'userProfileCtrl'
   });
 
+
 })
+.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance) {
+
+  
+  $scope.selected = {
+    item: 'item1'
+  };
+
+  $scope.send = function () {
+    console.log('this is your message',$scope.message)
+
+    $uibModalInstance.close($scope.selected.item);
+  };
+
+  $scope.cancel = function () {
+    $uibModalInstance.dismiss('cancel');
+  };
+});
+
+

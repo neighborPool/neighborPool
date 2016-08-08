@@ -1,5 +1,5 @@
 // create main angular module, connect to other modules and router. This is a basic set up as your application grows you can refactor as you wish.
-angular.module('NeighborPool',["ui.router", 'infinite-scroll' ,'uiGmapgoogle-maps', 'NeighborPool.Signup','NeighborPool.Login', 'MapView', 'NeighborPool.UserProfile'])
+angular.module('NeighborPool',["ui.router",'ngAnimate', 'ui.bootstrap', 'uiGmapgoogle-maps', 'NeighborPool.Signup','NeighborPool.Login', 'MapView', 'NeighborPool.UserProfile'])
 
 // make your route configurations using uiRouter, the config func takes in a callback with two parameter $stateProvider, $urlRouterProvider. the parameter are objects. read what methods they have.
 .config(function($stateProvider, $urlRouterProvider ){

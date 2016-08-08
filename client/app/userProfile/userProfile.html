@@ -20,6 +20,25 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+
+
+<div>
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Send a message</h3>
+        </div>
+        <div class="modal-body">
+          <textarea class="messageBox" ng-model='message'></textarea>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="send()">Send</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+</div>
+
+
+
 <h4 class="profileHeader">Meet your neighbors through ride sharing</h4>
 <div  ui-sref='userProfile' id="userProfile">
   <div id="scrollUsers">Scroll Users</div>
@@ -33,7 +52,7 @@
           <p class="caption">Daily Routies</p>
           <div class="buttons">
             <a ng-click='changeThumbColor()' class="thumbs btn btn-default" role="button"><img src="../assets/thumbs-up-icon (1).png"></a>
-            <span><a ng-click='alerting()' class="btn btn-primary message" role="button">Message</a></span>
+            <span><a ng-click="open('sm')" class="btn btn-primary message" role="button">Message</a></span>
           </div>
         </div>
       </div> 
